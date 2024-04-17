@@ -1,0 +1,224 @@
+.bicycleContainer {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  h2 {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  p {
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.drawUp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .drawUpDocs {
+    max-width: 560px;
+    h3 {
+      font-size: 24px;
+    }
+    .drawUpFlex {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+.advantages {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  .advantagesTop {
+    display: flex;
+    gap: 30px;
+    .advantagesImg {
+      border-radius: 7px;
+      object-fit: cover;
+    }
+    h4 {
+      font-weight: 700;
+      font-size: 30px;
+    }
+
+    li {
+      display: flex;
+      margin-top: 10px;
+      color: #373737;
+      font-weight: 500;
+      padding: 5px;
+      gap: 5px;
+    }
+    .advantagesTopPromotion {
+      border: 3px solid #ffb333;
+      font-style: italic;
+      padding: 10px 5px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  }
+}
+.tableContainer {
+  max-height: 300px; /* Установите желаемую высоту контейнера */
+  overflow: auto;
+}
+.winter {
+  thead tr {
+    color: #ffffff;
+    font-weight: bold;
+    background: #6ec1e4;
+    th {
+      padding: 15px 10px;
+    }
+  }
+}
+.toAccs {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  span {
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+}
+
+.choice {
+  margin: 0 auto;
+  margin-top: 120px;
+  h2 {
+    padding: 10px;
+    text-align: center;
+    color: #3d3d3d;
+    font-size: 50px;
+    font-weight: 900;
+  }
+  .choiceTop {
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    .choiceTopImages {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      p {
+        text-align: center;
+      }
+      .border {
+        height: 4px;
+        width: 78%;
+        background-color: #6ec1e4;
+      }
+      .tacLeft {
+        text-align: justify;
+        margin: 0;
+      }
+    }
+    div {
+      p {
+        color: #313131;
+        margin-bottom: 20px;
+        line-height: 1.5;
+      }
+      h5 {
+        font-size: 18px;
+        font-family: inherit;
+        color: #313131;
+        font-weight: normal;
+      }
+      ul {
+        li {
+          display: flex;
+          gap: 10px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          span {
+            color: #54595f;
+            &:first-child {
+              color: #6ec1e4;
+            }
+          }
+        }
+      }
+    }
+
+    .imageCover {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .drawUp {
+    flex-direction: column;
+    margin-bottom: 60px;
+    padding: 0 10px;
+  }
+
+  .advantagesTop {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    .advantagesTopInfo {
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+  .choiceTop {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    .imageCover {
+      // object-fit: cover;
+      // object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .choiceReverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 580px) {
+  .bicycleContainer {
+    h2 {
+      font-size: 40px;
+    }
+  }
+  .drawUpDocs {
+    h3 {
+      text-align: center;
+    }
+  }
+  .advantagesImg {
+    width: 426px;
+    height: 284px;
+  }
+  .choice {
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .advantagesImg {
+    width: 327px;
+    height: 218px;
+  }
+  .drawUpImg {
+    width: 323px;
+    height: 438px;
+  }
+}

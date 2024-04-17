@@ -1,0 +1,110 @@
+.bicycleContainer {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  h2 {
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  p {
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.drawUp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .drawUpDocs {
+    max-width: 560px;
+    h3 {
+      font-size: 24px;
+    }
+    .drawUpFlex {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+
+.advantages {
+  margin-top: 120px;
+  .advantagesTop {
+    display: flex;
+    gap: 30px;
+    .advantagesImg {
+      border-radius: 7px;
+    }
+    h4 {
+      font-weight: 700;
+      font-size: 30px;
+    }
+    p {
+      margin-top: 10px;
+      color: #373737;
+      font-weight: 500;
+      padding: 5px;
+      &::before {
+        content: "\2705";
+        margin-right: 10px;
+      }
+    }
+    .advantagesTopPromotion {
+      border: 3px solid #ffb333;
+      font-style: italic;
+      padding: 10px 5px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .drawUp {
+    flex-direction: column;
+    margin-bottom: 60px;
+    padding: 0 10px;
+  }
+
+  .advantagesTop {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    .advantagesTopInfo {
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .drawUpDocs {
+    h3 {
+      text-align: center;
+    }
+  }
+  .advantagesImg {
+    width: 426px;
+    height: 284px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bicycleContainer {
+    h2 {
+      font-size: 38px;
+    }
+  }
+  .advantagesImg {
+    width: 327px;
+    height: 218px;
+  }
+  .drawUpImg {
+    width: 323px;
+    height: 438px;
+  }
+}

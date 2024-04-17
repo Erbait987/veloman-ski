@@ -1,0 +1,184 @@
+.header {
+  background-color: #f0efef;
+  .headerTop {
+    height: auto;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    background-color: #fa792e;
+    .headerInfo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      padding-left: 40px;
+      .headerInfoIcon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 75px;
+    padding: 0 20px;
+
+    .navItems {
+      display: flex;
+      gap: 20px;
+      font-weight: 600;
+      position: relative;
+
+      .navLink {
+        color: black;
+        transition: 0.2s ease-in-out;
+        &:focus,
+        :hover {
+          color: #fa792e;
+        }
+      }
+      cursor: pointer;
+
+      li {
+        transition: 0.2s ease-in-out;
+        & :hover {
+          color: #fa792e;
+        }
+      }
+
+      .dropdownContainer {
+        position: relative;
+        z-index: 1000;
+        &:hover {
+          color: #fa792e;
+        }
+      }
+
+      .dropdownContent {
+        position: absolute;
+        width: 300px;
+        top: 100%;
+        left: -10px;
+        background-color: #f0efef;
+        padding: 10px 10px 15px;
+        z-index: 999;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          .dropdownImage {
+            margin-top: 20px;
+          }
+        }
+
+        .dropdownLink {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          text-decoration: none;
+          color: black;
+          transition: 0.2s ease-in-out;
+          margin-top: 20px;
+          &:hover {
+            color: #fa792e;
+          }
+        }
+      }
+    }
+
+    .burgerMenu {
+      display: none;
+    }
+    .burgerButton {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+    .line,
+    .lineOpen {
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: #000;
+      margin: 6px auto;
+      transition: transform 0.3s ease;
+    }
+
+    /* Стили для открытой кнопки бургера */
+    .lineOpen:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .lineOpen:nth-child(2) {
+      opacity: 0;
+    }
+
+    .lineOpen:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .nav {
+      .burgerMenu {
+        display: block;
+        background-color: transparent;
+        border: none;
+        padding: 10px;
+        color: #000;
+        cursor: pointer;
+      }
+      .navItems {
+        position: fixed;
+        top: 0;
+        left: -60%;
+        flex-direction: column;
+        width: 60%;
+        height: 100%;
+        background-color: #f0efef;
+        z-index: 20;
+        border: 2px solid rgb(197, 197, 197);
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        transition: transform 0.3s linear;
+        padding: 20px;
+        .dropdownContent {
+          position: static;
+          background-color: #f0efef;
+          transition: all 0.2s;
+        }
+      }
+      .navItems.active {
+        transform: translateX(100%);
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    .nav {
+      .navItems {
+        .dropdownContent {
+          width: 190px;
+        }
+      }
+    }
+  }
+  @media (max-width: 350px) {
+    .nav {
+      .navItems {
+        .dropdownContent {
+          width: 150px;
+        }
+      }
+    }
+  }
+}

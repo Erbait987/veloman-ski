@@ -1,0 +1,44 @@
+.receptUs {
+  width: 100%;
+  height: 360px;
+  background-color: #54595f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  .receptUsInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    h4 {
+      max-width: 430px;
+      font-size: 34px;
+      font-weight: 900;
+    }
+    .borderL {
+      border-left: 3px solid #ffb333;
+      height: 100px;
+    }
+
+    p {
+      max-width: 590px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .receptUs {
+    height: auto;
+  }
+  .receptUsInfo {
+    flex-direction: column;
+    padding: 20px 10px;
+
+    .borderL {
+      display: none;
+    }
+  }
+}
