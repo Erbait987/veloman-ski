@@ -1,6 +1,7 @@
 import React from "react";
 import BicyclesCarts from "../components/BicyclesCarts";
 import client from "@/app/contentful";
+import styles from "./bicycles.module.scss";
 
 export const getData = async () => {
   try {
@@ -24,15 +25,7 @@ const Bicycles = async () => {
       <div className="container">
         <div style={{ margin: "100px 0px" }}>
           {items.map((item, index) => (
-            <div
-              key={index}
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                alignItems: "center",
-                gap: "80px",
-              }}
-            >
+            <div className={styles.bicyclesWrap} key={index}>
               {item.fields.bicycles.map((item, id) =>
                 item.bike.map((bike, bikeId) => (
                   <BicyclesCarts

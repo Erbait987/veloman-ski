@@ -6,12 +6,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 
   .contactUsInfo {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
     h4 {
       max-width: 480px;
