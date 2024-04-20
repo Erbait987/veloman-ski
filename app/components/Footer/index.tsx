@@ -8,7 +8,9 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.footerContainer}>
-          <Image src="/newlogo.png" width={180} height={90} alt="logo" />
+          <Link href="/">
+            <Image src="/newlogo.png" width={180} height={90} alt="logo" />
+          </Link>
           <div className={styles.footerItems}>
             <ul>
               <li>Прокат летнего инвентаря</li>

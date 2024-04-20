@@ -2,10 +2,17 @@
   text-align: center;
   margin-top: 70px;
   margin-bottom: 40px;
+  padding: 0 20px;
+  @media (max-width: 450px) {
+    margin-top: 20px;
+  }
   h2 {
     font-size: 60px;
     font-weight: 900;
     margin-bottom: 10px;
+    @media (max-width: 450px) {
+      font-size: 38px;
+    }
   }
   p {
     line-height: 1.5;
@@ -34,6 +41,10 @@
 .advantages {
   margin-top: 120px;
   margin-bottom: 120px;
+  @media (max-width: 450px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
   .advantagesTop {
     display: flex;
     gap: 30px;
@@ -64,7 +75,7 @@
   }
 }
 .tableContainer {
-  max-height: 300px; /* Установите желаемую высоту контейнера */
+  max-height: 300px;
   overflow: auto;
 }
 .winter {
@@ -93,6 +104,9 @@
 .choice {
   margin: 0 auto;
   margin-top: 120px;
+  @media (max-width: 450px) {
+    margin-top: 60px;
+  }
   h2 {
     padding: 10px;
     text-align: center;
@@ -105,6 +119,9 @@
     display: flex;
     gap: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    @media (max-width: 450px) {
+      margin-top: 30px;
+    }
     .choiceTopImages {
       display: flex;
       flex-direction: column;
