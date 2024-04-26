@@ -102,7 +102,7 @@ export const Header = () => {
               onMouseEnter={() => setIsSummerDropdownOpen(true)}
               onMouseLeave={() => setIsSummerDropdownOpen(false)}
             >
-              Летний сезон ⯆
+              Летний сезон &#9660;
               {isSummerDropdownOpen && (
                 <ul className={styles.dropdownContent}>
                   <li>
@@ -134,7 +134,7 @@ export const Header = () => {
                       href="/bicycles"
                       onClick={togleOpen}
                     >
-                      Велосипеды
+                      Покупка велосипедов
                     </Link>
                   </li>
                   <li>
@@ -161,7 +161,7 @@ export const Header = () => {
               onMouseEnter={() => setIsWinterDropdownOpen(true)}
               onMouseLeave={() => setIsWinterDropdownOpen(false)}
             >
-              Зимний сезон ⯆
+              Зимний сезон &#9660;
               {isWinterDropdownOpen && (
                 <ul className={styles.dropdownContent}>
                   <li>
