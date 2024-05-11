@@ -1,3 +1,4 @@
+"use client";
 import client from "@/app/contentful";
 import styles from "../styles/styles.module.scss";
 

@@ -1,3 +1,4 @@
+"use client";
 import client from "@/app/contentful";
 import { ContactUs } from "../components/ContactUs";
 import { Map } from "../components/Map";

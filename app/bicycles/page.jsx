@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import BicyclesCarts from "../components/BicyclesCarts";
 import client from "@/app/contentful";

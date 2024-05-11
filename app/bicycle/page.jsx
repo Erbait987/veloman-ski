@@ -1,3 +1,4 @@
+"use client";
 import client from "@/app/contentful";
 import styles from "./bicycle.module.scss";
 import Image from "next/image";
