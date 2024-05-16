@@ -117,8 +117,10 @@ export const Footer = () => {
                   alt="Map Icon"
                   width={20}
                   height={20}
-                />{" "}
-                Ул. Планерная 24.б Санкт-Петербург, Россия,
+                />
+                <a href="https://yandex.ru/maps/-/CDbgiJ4c" target="blank">
+                  Адрес: УЛ. Планерная 24.Б
+                </a>
               </li>
               <li className={styles.flex}>
                 <Image

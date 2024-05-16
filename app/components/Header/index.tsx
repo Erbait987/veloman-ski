@@ -82,7 +82,9 @@ export const Header = () => {
               width={20}
               height={20}
             ></Image>
-            Адрес: УЛ. Планерная 24.Б
+            <a href="https://yandex.ru/maps/-/CDbgiJ4c" target="blank">
+              Адрес: УЛ. Планерная 24.Б
+            </a>
           </li>
         </ul>
       </div>
