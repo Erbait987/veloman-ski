@@ -101,14 +101,14 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a className={styles.flex} href="tel:+79118159974">
+                <a className={styles.flex} href="tel:+79812646383">
                   <Image
                     src="/svg/telephone-signal-svgrepo-com.svg"
                     alt="Icon number"
                     width={20}
                     height={20}
                   />
-                  +7 (911) 815-99-74
+                  +7 (981) 264-63-83
                 </a>
               </li>
               <li className={styles.flex}>

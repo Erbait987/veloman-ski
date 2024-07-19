@@ -55,7 +55,7 @@ export const Header = () => {
               width={20}
               height={20}
             ></Image>
-            <a href="tel:+79118159974">+7 (911) 815-99-74</a>
+            <a href="tel:+79812646383">+7 (981) 264-63-83 </a>
           </li>
           <li className={styles.headerInfoIcon}>
             <Image
