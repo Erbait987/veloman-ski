@@ -38,7 +38,7 @@ const Skiing = async () => {
                   <tr>
                     <th>Сутки</th>
                     <th>12ч</th>
-                    <th>1 суток</th>
+                    <th>1 сутки</th>
                     <th>2 суток</th>
                     <th>3 суток</th>
                     <th>7 суток</th>
