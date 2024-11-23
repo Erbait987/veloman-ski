@@ -38,12 +38,12 @@ const Skiing = async () => {
                   <tr>
                     <th>Сутки</th>
                     <th>12ч</th>
-                    <th>1д</th>
-                    <th>2д</th>
-                    <th>3д</th>
-                    <th>7д</th>
-                    <th>30д</th>
-                    <th>120д</th>
+                    <th>1 суток</th>
+                    <th>2 суток</th>
+                    <th>3 суток</th>
+                    <th>7 суток</th>
+                    <th>30 суток</th>
+                    <th>120 суток</th>
                   </tr>
                 </thead>
                 <tbody>
