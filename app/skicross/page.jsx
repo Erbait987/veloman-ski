@@ -39,6 +39,7 @@ const SkiCross = async () => {
                   <thead>
                     <tr>
                       <th>Сутки</th>
+                      <th>3ч</th>
                       <th>12ч</th>
                       <th>1 сутки</th>
                       <th>2 суток</th>
